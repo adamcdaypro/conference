@@ -43,7 +43,7 @@ open class ConferenceConfiguration : WebMvcConfigurer {
         return InternalResourceViewResolver().apply {
             setPrefix("/WEB-INF/jsp/")
             setSuffix(".jsp")
-            order = 0
+            order = 1
         }
     }
 

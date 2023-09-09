@@ -11,4 +11,11 @@ class GreetingController {
         model["message"] = "Hello Adam!"
         return "greeting"
     }
+
+    @GetMapping("thyme")
+    fun getThymeleaf(model: MutableMap<String, Any>): String {
+        model["message"] = "Hello Adam!"
+        return "thyme"
+    }
+
 }
