@@ -4,10 +4,16 @@
 <html>
 <head>
     <title>Registration</title>
+    <style>
+        .error {
+            color: #ff0000;
+        }
+    </style>
 </head>
 <body>
     <h1>Registration</h1>
     <form:form modelAttribute="registration">
+        <form:errors path="*" cssClass="error" element="div" />
         <table>
             <tr>
                 <spring:message code="name" />
